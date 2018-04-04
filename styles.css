@@ -1,0 +1,181 @@
+h1 {
+  background-color:blue;
+  color:red;
+  text-align:center;
+}
+
+img{
+text-align:center;
+    width:300px;
+    height:300px;
+  
+  border:solid black 1px;
+  opacity: 0.5;
+  
+}
+
+
+img:hover {
+ transition: opacity 1s; 
+ opacity: 1; 
+}
+input {
+ width: 100%; 
+ bottom: 10%;
+ padding: 10px;
+ margin-top: 10px;
+ text-align: center;
+}
+#present {
+ text-align: center; 
+}
+#1914 {
+ text-align: left; 
+}
+
+h1::first-letter{
+color:gold;
+  font-size:70px;
+}
+
+h1{
+  animation: pulse 16s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: black;
+  }
+  100% {
+    background-color: white;
+  }
+  
+}
+
+button{
+border-radius:4000px;
+margin: 5px;
+padding: 5px;
+}
+button:hover {
+ transition: box-shadow 1s;
+ box-shadow: 2px 2px 5px honeydew;
+}
+
+/* spin */
+.future:hover{
+  width: 300px;
+  height: 300px;
+  background-color: #0CB1C4;
+  animation-name: spin;
+  animation-duration: 1800ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* earthquake mode*/
+.WW1:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 1s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: 1; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+iframe{
+width:300px;
+height:300px;
+  float:right;
+}
+
+.WW1:hover{
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s; 
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  
+}
+/*slidy thing*/
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
+  /*background: url("http://icons.iconarchive.com/icons/johanchalibert/mac-osx-yosemite/1024/timemachine-icon.png");*/
+}
+/*The bar to side on*/
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+            @-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 100px black; }
+  50% { background-color: green; -webkit-box-shadow: 0 0 100px white; }
+  100% { background-color: blue; -webkit-box-shadow: 0 0 100px black; }
+}
+
+img{
+  -webkit-animation: glowing 4000ms infinite;
+}
+
